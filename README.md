@@ -1,7 +1,10 @@
 ### Simple React apollo client example.
 
 Simple React apollo client example using GitHub GraphQL API
-<img src="https://media.giphy.com/media/fuWagPgoIC3ytjAInk/giphy.gif" width="300" />
+
+**GIf**
+
+<img src="https://media.giphy.com/media/fuWagPgoIC3ytjAInk/giphy.gif" width="400" />
 
 **How to use**
 
