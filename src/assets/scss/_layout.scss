@@ -1,0 +1,75 @@
+@import url('https://rsms.me/interface/interface.css');
+
+
+html {
+  padding: 0;
+  margin: 0;
+  background: white;
+  overflow-x: hidden;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  background: $background;
+  color: $text;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+div#root{
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+.title {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 0 0 12px 0;
+  padding: 0;
+  color: $textLightest;
+  letter-spacing: 2px;
+}
+a {
+  font-size: 14px;
+  color: $apBlue;
+  &:hover {
+    color: $apSky;
+    @include easeFast;
+    cursor: pointer;
+  }
+}
+
+// Vars ------------------------- End

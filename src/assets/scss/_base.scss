@@ -1,0 +1,22 @@
+// Vars -------------------------
+$border: #DFE5EB;
+$background: #f0f4f7;
+$lightBorder: #FAFBFC;
+$text: #162D3D;
+$textLight: #20455E;
+$textLightest: #7A92A5;
+$apBlue: #3899EC;
+$apDark: #308DDD;
+$apSky: #4EB7F5;
+$apPremium: #6f42c1;
+// -------------------------
+
+@mixin ease {
+    -webkit-transition: all 680ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 680ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  @mixin  easeFast {
+    -webkit-transition: all 230ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 230ms cubic-bezier(0.19, 1, 0.22, 1);
+  }

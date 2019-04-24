@@ -1,0 +1,520 @@
+@import  '../../assets/scss/_base.scss';
+.bossWrapp {
+  width: 1096px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  & .line {
+    content: '';
+    position: absolute;
+    left: 0;
+    border: 0px solid transparent;
+    top: 0;
+    height: 90%;
+    width: 1px;
+    background: $border;
+  }
+}
+// 
+.details {
+  max-width: 360px;
+  min-width: 360px;
+  width: 360px;
+  min-height: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  border: 1px solid $border;
+  margin: 0 0 0 36px;
+  background: #FAFBFC;
+  .detHeader {
+    height: 114px;
+    width: 100%;
+    margin: 0 0 0px 0;
+    padding: 0 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $border;
+  
+    & a {
+      font-size: 14px;
+      color: $apBlue;
+  
+      & svg {
+        margin: 0 0 0 6px;
+        transform-origin: center center;
+        backface-visibility: hidden;
+      }
+      & svg g {
+        stroke: currentcolor;
+      }
+    }
+    & div {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    & h3 {
+      margin: 0 0 6px 0;
+      font-size: 24px;
+      font-weight: 300;
+      width: 100%;
+      display: inline-block;
+      position: relative;
+      & span {
+        // position: absolute;
+        white-space:nowrap;
+        padding: 4px 8px;
+        margin: 0 0 0 9px;
+        border-radius: 2px;
+        letter-spacing: 1px;
+        transform: translatey(-4px);
+        display: inline-flex;
+        background: $apPremium;
+        font-size: 13px;
+        font-weight: 900;
+        color: white;
+      }
+    }
+    & p {
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+  .detDetails {
+    margin: 36px 0 0 0;
+    padding: 0 36px;
+    & .benefits {
+      // margin: 0 0 30px 0;
+      display: flex;
+      padding: 0;
+      list-style: none;
+      .rounded-circle{
+        width: 120px;
+        box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1) !important;
+        border-radius: 50% !important;
+        max-width: 100%;
+        height: 120px;
+        margin: 0 auto;
+      }
+
+      & p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.4;
+        & img {
+          display: inline-block;
+          align-self: center;
+        }
+      }
+      & h5 {
+      }
+      & li {
+        font-size: 14px;
+        position: relative;
+        color: $textLight;
+        line-height: 2.25;
+        padding: 0 0 0 21px;
+          & p {
+        margin: 0;
+             line-height: 2.25;
+      }
+        &:after {
+          content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/270939/check.svg);
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+// 
+
+.features {
+  margin: 20px auto;
+  text-align: center;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  .title{
+    span{
+      opacity:0.6;
+    }
+  }
+
+  & h5 {
+  }
+  & li {
+    font-size: 14px;
+    position: relative;
+    color: $textLight;
+    line-height: 2.25;
+    padding: 0 0 0 21px;
+    & p {
+      margin: 0;
+    }
+    &:after {
+      content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/270939/bullet.svg);
+      position: absolute;
+      top: -3px;
+      left: 4px;
+    }
+    &:hover {
+      cursor: help;
+    }
+    & span {
+      display: none;
+      position: absolute;
+      z-index: 99999991;
+      left: 36px;
+      right: 0;
+      top: 36px;
+      width: 366px;
+      line-height: 18px;
+      background: #FFFFFF;
+      border: 1px solid #E3EBF1;
+      box-shadow: 0 4px 18px 0 rgba(22, 45, 61, 0.10);
+      border-radius: 2px;
+      padding: 18px;
+    }
+  }
+}
+.features li:hover .tooltip {
+  display: block;
+}
+.save span {
+  padding: 4px 8px;
+  margin: 0 36px 0 0px;
+  border-radius: 2px;
+  display: inline-flex;
+  letter-spacing: 1px;
+  background: #E4F6DC;
+  font-size: 13px;
+  font-weight: 500;
+  color: #45AB3D;
+}
+
+.detProfile {
+  transform-origin: center top;
+  padding: 0 36px;
+  margin: 30px 0 0 0;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid $border;
+  & a {
+    border-color: #1d8cf8;
+    border-radius: 30em;
+    width: 200px;
+    line-height: 42px;
+    margin: 10px auto;
+    font-size: .875rem;
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    background: #1d8cf8;
+    background-image: -webkit-linear-gradient(to bottom left,#1d8cf8,#3358f4,#1d8cf8);
+    background-image: -webkit-linear-gradient(top right,#1d8cf8,#3358f4,#1d8cf8);
+    background-image: linear-gradient(to bottom left,#1d8cf8,#3358f4,#1d8cf8);
+    background-size: 210% 210%;
+    background-position: 100% 0;
+    background-color: #1d8cf8;
+    box-shadow: none;
+    color: #fff;
+    transition: all 230ms cubic-bezier(0.19, 1, 0.22, 1);
+    @include easeFast;
+    &:hover {
+      color: #FFF;
+      box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+      transform: translateY(-1px);
+      -webkit-transform: translateY(-1px);
+    }
+  }
+  & p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    & small {
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+}
+
+// steps
+//// ----------------
+
+.step {
+  position: relative;
+  margin: 36px 0;
+}
+.stepHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 36px 0;
+  position: relative;
+  background: white;
+  & h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 300;
+    color: $text;
+    & p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+// Step Header Switcher
+.stepHeader h3 span {
+  position: absolute;
+  top: 0;
+  transform: translatey(25px);
+  opacity: 0;
+  & h5 {
+  }
+  & h3 {
+    margin: 0;
+    & a {
+      display: inline;
+      font-size: 16px;
+      text-decoration: none;
+      color: $apBlue;
+      font-weight: 400;
+      margin: 0 0 0 12px;
+      @include easeFast;
+      &:hover {
+        color: $apSky;
+        @include easeFast;
+      }
+    }
+  }
+}
+.stepCount {
+  position: relative;
+  z-index: 9;
+  margin: 0 24px 0 -20px;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  align-items: center;
+  height: 42px;
+  width: 42px;
+  background: white;
+  border: 1px solid $border;
+  border-radius: 30em;
+  box-shadow: 0 0 0 6px $lightBorder;
+  @include ease;
+}
+
+.stepCount.active {
+  @include ease;
+  color: white;
+  background: #3899EC;
+  box-shadow: 0 0 0 6px $lightBorder;
+}
+.stepCount.done {
+  @include ease;
+  &:after {
+    position: absolute;
+    content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/270939/Checkmark-big.svg);
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 40px;
+    background: white;
+    border-radius: 36em;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+.stepDetails {
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 46px;
+  // display: flex;
+  flex-flow: wrap;
+  align-items: stretch;
+  will-change: opacity;
+  flex-direction: row;
+}
+.plans {
+  border-radius: 6px;
+  border: 1px solid $border;
+  width: 586px;
+  display: flex;
+  background: white;
+  flex-direction: column;
+}
+.plan {
+  border-bottom: 1px solid $border;
+  min-height: 114px;
+  max-height: 114px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px;
+  align-content: center;
+  position: relative;
+  &:last-child {
+    border-bottom: 0px solid $border;
+  }
+  &:hover{
+    a {
+      opacity: 1;
+    }
+  }
+  & a {
+    content: '';
+    position: absolute;
+    width: 586px;
+    height: 115px;
+    top: -1px;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    backface-visibility: none;
+    will-change: opacity;
+    transform: translatez();
+    @include ease;
+    left: -1px;
+    border: 1px solid rgba(#B6C1CD, 1);
+    box-shadow: 0 4px 28px -4px rgba(22, 45, 61, 0.2);
+  }
+  & .badge {
+      position: absolute;
+      left: 0;
+      top: 0;
+      white-space:nowrap;
+      padding: 4px 8px;
+      margin: 0 0 0 0px;
+      border-bottom-right-radius: 6px;
+      letter-spacing: 1px;
+      background: $apPremium;
+      font-size: 13px;
+      font-weight: 500;
+      color: white;
+  }
+
+  &:first-child  object {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  &:last-child object {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+}
+.planDesc {
+  width: 340px;
+  & h3 {
+    font-size: 20px;
+    margin: 0 0 6px 0;
+    font-weight: 500;
+    color: $text;
+  }
+  & p {
+    margin: 0;
+    color: $textLight;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20px;
+  }
+}
+.repoDeatils {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  & span {
+    color: $text;
+    font-size: 42px;
+    // margin: 0 36px 0 0;
+    font-weight: 700;
+    & sup {
+      font-size: 14px;
+      top: -18px;
+      font-weight: 400;
+      margin: 0 3px 0 0;
+    }
+    & sub {
+      margin: 0 0px 0 3px;
+      display: inline-block;
+      padding: .25rem .5rem;
+      font-size: .62475rem;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: initial;
+      border-radius: .25rem;
+      background-color: #00f2c3;
+    }
+  }
+}
+
+.plan button {
+  height: 36px;
+  text-align: center;
+  width: 96px;
+  border: 1px solid $apBlue;
+  color: $apBlue;
+  border-radius: 30em;
+  background: transparent;
+  justify-content: center;
+  display: flex;
+  margin: 0px 0 0 0;
+  padding: 2px 0 0 0;
+  z-index: 991;
+  @include easeFast;
+  outline: none;
+  &:hover {
+    background: $apBlue;
+    @include easeFast;
+    cursor: pointer;
+    color: white;
+  }
+      &:active {
+    background: $apDark;
+  }
+}
+.plan button.active {
+  background: $apBlue;
+  color: white;
+
+  &:hover {
+    background: $apSky;
+    border: 1px solid $apSky;
+  }
+      &:active {
+    background: $apDark;
+        border: 1px solid $apDark;
+  }
+}
+
+.fixed {
+  position: fixed;
+  top: 178px;
+}
+
